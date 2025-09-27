@@ -3,7 +3,7 @@
 Este proyecto analiza precios de viviendas y variables socioeconómicas en distintas regiones de España.
 
 ## 📊 Dataset
-- Fuente: [Nombre del dataset]
+- Fuente: [Precio de materiales de construccion]
 - Formato: CSV
 - Registros: +2500
 - Columnas: 9+
