@@ -8,8 +8,6 @@ Este proyecto analiza datos simulados sobre permisos de obra en la Ciudad Autón
 - Registros: 10,000
 - Columnas: 15
 
-🔗 [Descargar CSV desde GitHub](https://raw.githubusercontent.com/GFrankTI/Building-Energy-dataset-extended/refs/heads/main/tprey.csv)
-
 ### Objetivo
 Simular y analizar el comportamiento de permisos de obra en función de variables como temperatura, vibración, consumo energético, cantidad de trabajadores, incidentes de seguridad y sugerencias de optimización. El enfoque busca detectar patrones operativos y riesgos asociados a distintos tipos de obra.
 
