@@ -1,34 +1,19 @@
-## Proyecto 4 – Permisos de obra en CABA
+# 📁 Dataset 4 – Permisos de obra en CABA
 
-Este proyecto analiza datos sobre permisos de construcción emitidos en la Ciudad Autónoma de Buenos Aires. El objetivo es explorar la distribución geográfica, evolución temporal y tipos de obra autorizados, con foco en barrios y comunas de alta actividad.
+Este dataset contiene información sobre permisos de construcción emitidos en la Ciudad Autónoma de Buenos Aires. Incluye datos geográficos, administrativos y descriptivos de cada obra registrada.
 
-- 
-### Objetivo
-Detectar patrones en la emisión de permisos de obra, identificar zonas con mayor actividad constructiva y analizar la evolución temporal de los registros. Se presta especial atención a los tipos de permiso (obra nueva, demolición, prevención de incendios) y su distribución por barrio.
+🔗 [Descargar CSV desde GitHub](https://raw.githubusercontent.com/GFrankTI/Building-Energy-dataset-extended/refs/heads/main/Permisos%20de%20Trabajo%20de%20Construcci%C3%B3n%2C%20Buenos%20Aires%20Argentina.csv)
 
-### Columnas principales del dataset
-
+### Columnas principales
 - `WKT_1`, `WKT_2`: Coordenadas geográficas del permiso (formato texto).
-- `id_registr`: Número identificador único del registro (numérico).
+- `id_registr`: Número identificador único del registro (formato numérico).
 - `expediente`: Número y nombre del expediente del permiso (texto).
 - `fecha`: Fecha y hora de emisión del permiso (texto).
 - `ubicacion`: Dirección de la obra (calle y número).
 - `descripcion`: Descripción de la obra autorizada (texto).
-- `acronimo`: Abreviatura que indica el tipo de permiso.
-- `comuna`: Número de la comuna donde se ubica la obra (numérico).
-- `barrio`: Barrio correspondiente al permiso (texto).
+- `acronimo`: Abreviatura que indica el tipo de permiso (ej. obra nueva, demolición).
+- `comuna`: Número de la comuna donde se ubica la obra (formato numérico).
 
-### Limpieza y análisis
-Se realizó conversión de fechas, verificación de duplicados y nulos (no se encontraron), y agrupación por barrio, comuna y tipo de permiso. Se aplicaron visualizaciones para detectar zonas con mayor actividad y evolución temporal de los permisos.
+Este archivo fue utilizado en el análisis exploratorio del Proyecto 4, centrado en la distribución geográfica, evolución temporal y tipos de permisos emitidos en la ciudad.
 
-### Visualizaciones
-- Histogramas por barrio y comuna.
-- Series temporales de permisos emitidos por mes.
-- Gráficos de barras por tipo de permiso (`acronimo`).
-- Análisis cruzado entre barrio y tipo de obra.
-
-### Conclusión
-El análisis reveló que barrios como Palermo, Villa Urquiza, Belgrano y Caballito concentran gran parte de los permisos. Se observan caídas en 2020–2021 y repuntes en 2022–2023. El tipo de permiso más frecuente es obra nueva, seguido por demolición y prevención de incendios.
-
-### Integrante responsable
 - Carla Paz
