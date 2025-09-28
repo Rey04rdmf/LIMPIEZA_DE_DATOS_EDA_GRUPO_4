@@ -1,44 +1,41 @@
 ## Proyecto 4 – Permisos de obra en CABA
 
-Este proyecto analiza datos simulados sobre permisos de obra en la Ciudad Autónoma de Buenos Aires, utilizando variables generadas por sensores industriales para representar aspectos operativos, de seguridad y eficiencia en obras civiles.
+Este proyecto analiza datos sobre permisos de construcción emitidos en la Ciudad Autónoma de Buenos Aires. El objetivo es explorar la distribución geográfica, evolución temporal y tipos de obra autorizados, con foco en barrios y comunas de alta actividad.
 
 ### Dataset
-- Fuente: GitHub – Grupo 4 (datos simulados)
+- Fuente: GitHub – Grupo 4
 - Formato: CSV
-- Registros: 10,000
-- Columnas: 15
+- Registros: 29,388
+- Columnas: 10
+
+🔗 [Descargar CSV desde GitHub](https://raw.githubusercontent.com/GFrankTI/Building-Energy-dataset-extended/refs/heads/main/Permisos%20de%20Trabajo%20de%20Construcci%C3%B3n%2C%20Buenos%20Aires%20Argentina.csv)
 
 ### Objetivo
-Simular y analizar el comportamiento de permisos de obra en función de variables como temperatura, vibración, consumo energético, cantidad de trabajadores, incidentes de seguridad y sugerencias de optimización. El enfoque busca detectar patrones operativos y riesgos asociados a distintos tipos de obra.
+Detectar patrones en la emisión de permisos de obra, identificar zonas con mayor actividad constructiva y analizar la evolución temporal de los registros. Se presta especial atención a los tipos de permiso (obra nueva, demolición, prevención de incendios) y su distribución por barrio.
 
 ### Columnas principales del dataset
 
-- `Timestamp`: Fecha y hora del evento registrado.
-- `Temperature (°C)`: Temperatura ambiental en el momento del evento.
-- `Humidity (%)`: Porcentaje de humedad relativa.
-- `Vibration_Level (Hz)`: Nivel de vibración detectado, indicador de actividad.
-- `Material_Usage (kg)`: Cantidad de material utilizado.
-- `Energy_Consumption (kWh)`: Consumo energético asociado al evento.
-- `Worker_Count`: Número de trabajadores presentes.
-- `Task_Progress (%)`: Porcentaje de avance de la tarea.
-- `Safety_Incidents`: Número de incidentes de seguridad registrados.
-- `Risk_Score`: Nivel de riesgo estimado.
-- `Optimization_Suggestion`: Sugerencia generada para mejorar eficiencia.
-- `Performance_Score`: Evaluación del desempeño del evento.
+- `WKT_1`, `WKT_2`: Coordenadas geográficas del permiso (formato texto).
+- `id_registr`: Número identificador único del registro (numérico).
+- `expediente`: Número y nombre del expediente del permiso (texto).
+- `fecha`: Fecha y hora de emisión del permiso (texto).
+- `ubicacion`: Dirección de la obra (calle y número).
+- `descripcion`: Descripción de la obra autorizada (texto).
+- `acronimo`: Abreviatura que indica el tipo de permiso.
+- `comuna`: Número de la comuna donde se ubica la obra (numérico).
+- `barrio`: Barrio correspondiente al permiso (texto).
 
 ### Limpieza y análisis
-Se transformaron variables temporales, se agruparon registros por día y hora, y se clasificaron eventos por rango horario y día de la semana. Se aplicaron visualizaciones multivariadas para detectar relaciones entre riesgo, consumo energético y sugerencias de optimización.
+Se realizó conversión de fechas, verificación de duplicados y nulos (no se encontraron), y agrupación por barrio, comuna y tipo de permiso. Se aplicaron visualizaciones para detectar zonas con mayor actividad y evolución temporal de los permisos.
 
 ### Visualizaciones
-- Histogramas y boxplots de variables numéricas.
-- Gráficos de dispersión entre temperatura, humedad y vibración.
-- Mapas de calor de correlaciones.
-- Gráficos por rango horario y día de la semana.
-- Tablas de contingencia entre variables categóricas.
+- Histogramas por barrio y comuna.
+- Series temporales de permisos emitidos por mes.
+- Gráficos de barras por tipo de permiso (`acronimo`).
+- Análisis cruzado entre barrio y tipo de obra.
 
 ### Conclusión
-El análisis permitió simular escenarios de permisos de obra con distintos niveles de riesgo y eficiencia. Las sugerencias de optimización se relacionaron con variables como consumo energético, cantidad de trabajadores y progreso de tareas. El enfoque ofrece una base para modelar procesos constructivos y evaluar desempeño operativo.
+El análisis reveló que barrios como Palermo, Villa Urquiza, Belgrano y Caballito concentran gran parte de los permisos. Se observan caídas en 2020–2021 y repuntes en 2022–2023. El tipo de permiso más frecuente es obra nueva, seguido por demolición y prevención de incendios.
 
 ### Integrante responsable
-- Reinaldo Márquez
-
+- Carla Paz
