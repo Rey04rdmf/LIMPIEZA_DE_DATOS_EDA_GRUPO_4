@@ -8,8 +8,6 @@ Este proyecto analiza datos sobre permisos de construcción emitidos en la Ciuda
 - Registros: 29,388
 - Columnas: 10
 
-🔗 [Descargar CSV desde GitHub](https://raw.githubusercontent.com/GFrankTI/Building-Energy-dataset-extended/refs/heads/main/Permisos%20de%20Trabajo%20de%20Construcci%C3%B3n%2C%20Buenos%20Aires%20Argentina.csv)
-
 ### Objetivo
 Detectar patrones en la emisión de permisos de obra, identificar zonas con mayor actividad constructiva y analizar la evolución temporal de los registros. Se presta especial atención a los tipos de permiso (obra nueva, demolición, prevención de incendios) y su distribución por barrio.
 
